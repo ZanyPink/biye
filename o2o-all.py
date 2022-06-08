@@ -34,32 +34,32 @@ def main():
 
     @st.cache(allow_output_mutation=True)
     def load_pre_train():
-        train_data = pd.read_csv("https://github.com/ZanyPink/biye/blob/main/data/ccf_offline_stage1_train.csv", encoding='utf-8', sep='\t', keep_default_na=False)
+        train_data = pd.read_csv("https://github.com/ZanyPink/biye/blob/main/data/ccf_offline_stage1_train.csv", encoding='utf-8', sep='\t')
         return train_data
 
     @st.cache(allow_output_mutation=True)
     def load_pre_test():
-        test_data = pd.read_csv("https://github.com/ZanyPink/biye/blob/main/data/ccf_offline_stage1_test_revised.csv", encoding='utf-8', sep='\t', keep_default_na=False)
+        test_data = pd.read_csv("https://github.com/ZanyPink/biye/blob/main/data/ccf_offline_stage1_test_revised.csv", encoding='utf-8', sep='\t')
         return test_data
 
     @st.cache(allow_output_mutation=True)
     def load_pre_online():
-        online_data = pd.read_csv("https://github.com/ZanyPink/biye/blob/main/data/ccf_online_stage1_train.csv", encoding='utf-8', sep='\t', keep_default_na=False)
+        online_data = pd.read_csv("https://github.com/ZanyPink/biye/blob/main/data/ccf_online_stage1_train.csv", encoding='utf-8', sep='\t')
         return online_data
 
     @st.cache(allow_output_mutation=True)
     def load_rf():
-        rf_data = pd.read_csv("https://github.com/ZanyPink/biye/blob/main/result/rf_preds.csv", encoding='utf-8', sep='\t', keep_default_na=False)
+        rf_data = pd.read_csv("https://github.com/ZanyPink/biye/blob/main/result/rf_preds.csv", encoding='utf-8', sep='\t')
         return rf_data
 
     @st.cache(allow_output_mutation=True)
     def load_gbdt():
-        gbdt_data = pd.read_csv("https://github.com/ZanyPink/biye/blob/main/result/gbdt_preds.csv", encoding='utf-8', sep='\t', keep_default_na=False)
+        gbdt_data = pd.read_csv("https://github.com/ZanyPink/biye/blob/main/result/gbdt_preds.csv", encoding='utf-8', sep='\t')
         return gbdt_data
 
     @st.cache(allow_output_mutation=True)
     def load_xgb():
-        xgb_data = pd.read_csv("https://github.com/ZanyPink/biye/blob/main/result/xgb_preds.csv", encoding='utf-8', sep='\t', keep_default_na=False)
+        xgb_data = pd.read_csv("https://github.com/ZanyPink/biye/blob/main/result/xgb_preds.csv", encoding='utf-8', sep='\t')
         return xgb_data
 
     @st.cache
